@@ -1,18 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="style.css">
-    <title>CommunityCleans</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Cleans</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <nav class ="header">
-        Community Cleans
-    </nav>
-
-    <footer>Community Cleans</footer>
+  <header>
+    <div class="logo">
+      <h1>Community Cleans</h1>
+      <p>Help the environment: Sign up to volunteer.</p>
+    </div>
+  </header>
+  <main>
+    <section class="search-section">
+        <img src = https://cdn.discordapp.com/attachments/1307189936788869190/1308639042577109062/communitycleanstransparentnormal.png?ex=67488fd5&is=67473e55&hm=c6a49aeb96c0c4a19424a74796a03e4cea523aa583dd3685d005bc42442fd0a9&>
+      <h2>Search by:</h2>
+      <form id="search-form">
+        <select id="state" required>
+          <option value="" disabled selected>State</option>
+          <option value="California">California</option>
+          <option value="New York">New York</option>
+        </select>
+        <select id="event-type" required>
+          <option value="" disabled selected>Event Type</option>
+          <option value="Cleanup">Cleanup</option>
+          <option value="Recycling">Recycling</option>
+        </select>
+        <input id="location" type="text" placeholder="Location" required />
+        <button type="submit">Search</button>
+      </form>
+    </section>
+    <section class="events-section">
+      <h2>Upcoming Events</h2>
+      <div class="event">
+        <div class="event-date">
+          <span>Nov</span>
+          <span>19</span>
+        </div>
+        <div class="event-details">
+          <h3>Community clean up event</h3>
+          <p>123 Main ST<br>Queens, California<br>USA</p>
+        </div>
+      </div>
+      <div class="event">
+        <div class="event-date">
+          <span>Nov</span>
+          <span>19</span>
+        </div>
+        <div class="event-details">
+          <h3>Community clean up event</h3>
+          <p>123 Main ST<br>Queens, California<br>USA</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Community Cleans ©</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
-    <script src="script.js"></script>
 </html>
