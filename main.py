@@ -15,7 +15,8 @@ def get_file_contents(filename):
 
 genai.configure(api_key=get_file_contents(filename))
 model = genai.GenerativeModel("gemini-1.5-flash")
-response = model.generate_content("Explain how AI works")
+response = model.generate_content("Create an environmental volunteer program focused on mitigating carbon pollution.\
+                                  Ensure you include: 5 goals, required volunteers, a 10-step process.")
 print(response.text)
 
 
